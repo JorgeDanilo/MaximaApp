@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">App Challenge</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="url_base">https://bitbucket.org/!api/2.0/snippets/tilix-dev/AeLkqo/107589162d8393401a83fb081532fca8664bd4fd/</string>
+    <string name="msg_not_found">Nenhum artigo encontrado</string>
+    <string name="msg_failure">Uma falha inesperada aconteceu</string>
+    <string name="show_article">Visualizar</string>
+    <string name="marked_not_read">Marcar como não lido</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>
