@@ -34,14 +34,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ArticlesActivity"></activity>
+        <activity android:name=".activity.ArticlesActivity" />
         <activity
             android:name=".activity.DetailArticleActivity"
             android:label="@string/title_activity_main" />
         <activity
-            android:theme="@style/Theme.Design.Light"
             android:name=".activity.HomeActivity"
-            android:label="@string/title_activity_home"></activity>
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Design.Light" />
+        <activity
+            android:name=".activity.DetailClientActivity"
+            android:label="@string/title_activity_detail_client"></activity>
     </application>
 
 </manifest>

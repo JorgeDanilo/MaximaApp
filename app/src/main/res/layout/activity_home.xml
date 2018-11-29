@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,14 +9,17 @@
     android:gravity="center"
     tools:context=".activity.HomeActivity">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <TableRow android:gravity="center">
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             app:cardBackgroundColor="@color/colorBackgroundCards"
-            android:id="@+id/card_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/card_view_clientes"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             card_view:cardCornerRadius="4dp">
 
             <android.support.v7.widget.AppCompatImageView
@@ -25,66 +28,105 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_maxima_pessoas"/>
 
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cliente"/>
+            <TextView
+                android:paddingBottom="20dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/santral_bold"
+                android:gravity="bottom|center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Clientes" />
 
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             app:cardBackgroundColor="@color/colorBackgroundCards"
-            android:id="@+id/card_view2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/card_view_pedidos"
+            android:layout_marginLeft="20dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             card_view:cardCornerRadius="4dp">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_maxima_pessoas"/>
+                android:src="@drawable/ic_maxima_pedido"/>
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/santral_bold"
+                android:gravity="bottom|center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pedidos" />
 
         </android.support.v7.widget.CardView>
 
-    </TableRow>
+    </LinearLayout>
 
-    <TableRow android:gravity="center">
+    <LinearLayout
+        android:paddingTop="200dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             app:cardBackgroundColor="@color/colorBackgroundCards"
-            android:id="@+id/card_view3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/card_view_resumo_vendas"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             card_view:cardCornerRadius="4dp">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_maxima_pessoas"/>
+                android:src="@drawable/ic_maxima_resumo_vendas"/>
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/santral_bold"
+                android:gravity="bottom|center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Resumo de Vendas" />
 
         </android.support.v7.widget.CardView>
+
 
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             app:cardBackgroundColor="@color/colorBackgroundCards"
-            android:id="@+id/card_view4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/card_view_ferramentas"
+            android:layout_marginLeft="20dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             card_view:cardCornerRadius="4dp">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_maxima_pessoas"/>
+                android:src="@drawable/ic_maxima_ferramentas"/>
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/santral_bold"
+                android:gravity="bottom|center|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ferramentas" />
+
 
         </android.support.v7.widget.CardView>
 
-    </TableRow>
+    </LinearLayout>
 
 
-
-</TableLayout>
+</RelativeLayout>
